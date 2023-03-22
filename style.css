@@ -9,112 +9,116 @@
 *::after {
   box-sizing: inherit;
 }
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "Inter", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
-    overflow-x: hidden;
-  }
-  .wrapper {
-    width: 375px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #fff;
-    gap: 40px;
-  }
-  
-  header {
-    width: calc(100% - 6px);
-    font-weight: 600;
-    font-size: 1.3rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .nav-title {
-    color: black;
-    text-decoration: none;
-  }
-  .navbar {
-    width: 100%;
-    min-height: 60px;
-    padding: 0 24px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  } 
-  .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: black;
-  }
-  
-  .humburger {
-    cursor: pointer;
-  }
-  
-  .main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 60px;
-  }
 
-  .section1 {
-    height: 80vh;
-    display: flex;
-    padding: 20% 10% 0;
-    flex-direction: column;
-    align-items: center;
-    background: url("images/header-illsutration-mobile.svg");
-    background-position: top;
-    background-repeat: no-repeat;
-  }
-  
-  .greeting-text,
-  .profission-text,
-  .supporting-text {
-    text-align: center;
-  }
-  
-  .greeting-text,
-  .profission-text {
-    margin: 3px;
-    font-size: 1.8em;
-    font-weight: 700;
-  }
-  
-  .profission-text {
-    color: rgb(66, 188, 148);
-  }
-  
-  .supporting-text {
-    margin: 1rem 2rem;
-    line-height: 1.6;
-    font-weight: 500;
-  }
-  
-  .social-media {
-    width: 60%;
-  }
-  
-  .social-media ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    margin-top: 7vh;
-  }
-  
-  .action-arrow-down {
-    position: absolute;
-    bottom: 0;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: 375px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  gap: 40px;
+}
+
+header {
+  width: calc(100% - 6px);
+  font-weight: 600;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-title {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar {
+  width: 100%;
+  min-height: 60px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+
+.humburger {
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+}
+
+.section1 {
+  height: 80vh;
+  display: flex;
+  padding: 20% 10% 0;
+  flex-direction: column;
+  align-items: center;
+  background: url("images/header-illsutration-mobile.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.greeting-text,
+.profission-text,
+.supporting-text {
+  text-align: center;
+}
+
+.greeting-text,
+.profission-text {
+  margin: 3px;
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
+.profission-text {
+  color: rgb(66, 188, 148);
+}
+
+.supporting-text {
+  margin: 1rem 2rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.social-media {
+  width: 60%;
+}
+
+.social-media ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-top: 7vh;
+}
+
+.action-arrow-down {
+  position: absolute;
+  bottom: 0;
+}
