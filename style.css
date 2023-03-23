@@ -36,7 +36,7 @@ header {
   justify-content: space-between;
 }
 
-.nav-title {
+.nav-logo {
   color: black;
   text-decoration: none;
 }
@@ -47,7 +47,11 @@ header {
   padding: 0 24px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
+}
+.nav-menu{
+  display: none;
+  text-decoration: none;
 }
 
 .bar {
