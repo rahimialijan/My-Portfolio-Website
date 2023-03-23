@@ -1,65 +1,29 @@
-<a name="readme-top"></a>
-
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-OPTIONAL SECTIONS:
-- FAQ
-
-After you're finished please remove all the comments and instructions!
--->
-
-<div align="center">
-
-
-  <h3><b>Hello Microverse Project</b></h3>
-
-</div>
-
-<!-- TABLE OF CONTENTS -->
-
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
+  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-<!-- PROJECT DESCRIPTION -->
 
-# 📖 Hello Microverse <a name="about-project"></a>
+# 📖 [My-Portfolio] <a name="about-project"></a>
 
-**Hello Microverse Project** is about mastering all the tools and best practices I've learned about how to document my work in a professional way considering proper Githubflow and especially using other technical topics like linters and pull requests.
-
-
-
+> **[My-Portfolio]** is a project to showcase all of my recent work. It will maitain the information and history of my recent projects,
+ the brave informatin about me, and the link to my resume. it will also provide the context to be in contact with the clients.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -68,55 +32,91 @@ After you're finished please remove all the comments and instructions!
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://git-scm.com/">HTML and CSS</a></li>
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
   </ul>
 </details>
-<!-- Features -->
+
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="#"></a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="#"></a></li>
+  </ul>
+</details>
+
 
 ### Key Features <a name="key-features"></a>
-
-- **[Key Feature1:]**  Code Correction is done by Linter
-- **[Key Feature2:]**  Applied Correct Githubflow and documented in professional way
+- **[Represent most recent projcts]**
+- **[Represnt skills and technogies]**
+- **[Create contact context for visitors]**
+- **[Responsive with the view of desktop and mobile]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+
+- [Live Demo Link](https://github.com/rahimialijan/Portfolio-Mobile)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## 💻 Getting Started <a name="getting-started"></a>
+
 
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need:
+- A Nude.js installed on your local system.
+- A browser of you choice.
+- A text editor of your choice.
 
-- vscode.
-
-- git.
-
-- set up an index.html document.
-- set up a style.css document.
 
 ### Setup
 
 Clone this repository to your desired folder:
-- Navigate to the directory where you want clone this project in your computer
-`$ cd Desktop/`
-`$ git clone https://github.com/rahimialijan/Hello-Microverse.git`
+
+Use the following Commands:
+  - cd your-desired-folder
+  - git clone git@github.com:rahimialijan/Portfolio-Mobile.git
+
+
+
 
 ### Install
 
-Install this project with this command:
+Install this project with:
+  - You can deploy it with your hosting provider of your choise.
+
 
 ### Usage
 
-To run the project, execute the following command by opening the vscode with the command `code .`
+- To demonstrate your skills & knowlege of technoly.
+- To represent the most recent project.
+- to maitain connection with visitors.
+
+
+### Deployment
+
+You can deploy this project using:
+- Free deployment services like GitHub pages.
+- Any deployment services of your choice.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
+
 
 👤 **Alijan Rahimi**
 
@@ -127,14 +127,12 @@ To run the project, execute the following command by opening the vscode with the
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
 ## 🔭 Future Features <a name="future-features"></a>
-
-- [1] **[ Setting Up A Professional Github Repository.]**
-
+- [ ] **[Responsiveness with the all kind of laptop and handheld devices viewport]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -144,33 +142,26 @@ Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
- If you like this project, give it a star ⭐
+If you like this project, you are most welcome to Contribute.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for setting up this project for student
+
+I would like to thank all of My colleagues and supporters.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-- **[How is learning in Microverse program? ]**
-
-  - [I have to say , I really enjoy and get a lot of experience.]
-
-<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
