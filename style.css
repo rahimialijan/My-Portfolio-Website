@@ -179,7 +179,7 @@ header {
 }
 
 .cart-container {
-  width: 100%;
+  width: calc(100% - 1px);
   height: 474px;
   border-radius: 8px;
   border: 1px solid #d0d9d4;
@@ -189,6 +189,13 @@ header {
 .img-container {
   width: 100%;
   height: 252px;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
 }
 
 .cart-datails {
