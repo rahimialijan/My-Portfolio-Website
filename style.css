@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.btn {
+  padding: 12px;
+  color: white;
+  height: 24px;
+  text-decoration: none;
+  background-color: #36b37f;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-wrap: nowrap;
+  border: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: 375px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  gap: 40px;
+}
+
+header {
+  width: calc(100% - 6px);
+  font-weight: 600;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar {
+  width: 100%;
+  min-height: 60px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-menu {
+  display: none;
+  text-decoration: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+
+.humburger {
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+}
+
+.section1 {
+  height: 80vh;
+  display: flex;
+  padding: 20% 10% 0;
+  flex-direction: column;
+  align-items: center;
+  background: url("images/header-illsutration-mobile.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.greeting-text,
+.profission-text,
+.supporting-text {
+  text-align: center;
+}
+
+.greeting-text,
+.profission-text {
+  margin: 3px;
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
+.profission-text {
+  color: rgb(66, 188, 148);
+}
+
+.supporting-text {
+  margin: 1rem 2rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.social-media {
+  width: 60%;
+}
+
+.social-media ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-top: 7vh;
+}
+
+.action-arrow-down {
+  position: absolute;
+  bottom: 0;
+}
+
+/* Style for work-section */
+.work-section {
+  display: grid;
+  width: 100%;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+.works-title {
+  width: 70%;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.works-title hr {
+  width: 25%;
+  margin: 0 auto;
+  border: 3px solid green;
+  border-radius: 3px;
+}
+
+.works-title h2 {
+  margin: 5px auto;
+}
+
+.work-container {
+  display: grid;
+  width: 331px;
+  margin-top: 50px;
+  gap: 25px;
+}
+
+.cart-container {
+  width: 100%;
+  height: 474px;
+  border-radius: 8px;
+  border: 1px solid #d0d9d4;
+  background-color: #ebf0ee;
+}
+
+.img-container {
+  width: 100%;
+  height: 252px;
+}
+
+.cart-datails {
+  width: calc(100% - 22px);
+  height: 200px;
+  padding: 11px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.project-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 5px;
+  display: flex;
+  text-align: center;
+  color: #3a4a42;
+}
+
+.project-links {
+  display: flex;
+  align-items: stretch;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 6px;
+  height: 32px;
+}
+
+.project-links li {
+  flex: 1;
+  text-align: center;
+  padding: 8px 5px;
+  background: #ebf0ee;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.project-links li a {
+  text-decoration: none;
+  color: #3a4a42;
+  white-space: nowrap;
+}
+
+.cart-datails .btn {
+  height: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* Style for about me section */
+.about-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  justify-items: center;
+  align-items: center;
+}
+
+.about-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: url("images/aboutme-topright.svg"), url("images/aboutme-bottomleft.svg");
+  background-position: right top, left bottom;
+  background-repeat: no-repeat;
+}
+
+.about-header h1 {
+  width: 60%;
+  font-size: 1.8em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.about-header p {
+  width: 70%;
+  margin: 0 auto 25px;
+  line-height: 1.6;
+  font-weight: 500;
+  text-align: center;
+}
+
+.about-header .btn {
+  width: 135px;
+  font-weight: 500;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease;
+}
+
+.about-header .btn:hover,
+.cart-datails .btn:hover {
+  background-color: #ff6163;
+}
+
+.about-container {
+  display: grid;
+  width: 331px;
+  margin-top: 50px;
+  gap: 25px;
+  align-self: center;
+}
+
+.about-cart {
+  width: 100%;
+  height: 316px;
+  padding-bottom: 5%;
+  border-radius: 8px;
+  border: 1px solid #c1c7d0;
+  background-color: #ebf0ee;
+}
+
+.about-icon {
+  width: 100%;
+  height: 100px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-datails {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-datails h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #344563;
+}
+
+.language-li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  height: 40px;
+  gap: 8px;
+  margin: 0 5px;
+}
+
+.language-li li {
+  display: flex;
+  padding: 8px 12px;
+  background: #fff;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  border-radius: 8px;
+}
+
+.language-li li a {
+  text-decoration: none;
+  color: #36b37e;
+}
