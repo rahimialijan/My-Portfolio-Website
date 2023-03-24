@@ -247,9 +247,7 @@ header {
   cursor: pointer;
   transition: 0.2s ease;
 }
-.cart-datails .btn:hover{
-  background-color: #FF6163;
-}
+
 /* Style for about me section */
 .about-section {
   display: flex;
@@ -294,8 +292,10 @@ header {
   align-items: center;
   transition: 0.2s ease;
 }
-.about-header .btn:hover{
-  background-color: #FF6163;
+
+.about-header .btn:hover,
+.cart-datails .btn:hover {
+  background-color: #ff6163;
 }
 
 .about-container {
