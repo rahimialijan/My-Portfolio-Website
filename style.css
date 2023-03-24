@@ -167,7 +167,7 @@ header {
   border-radius: 3px;
 }
 
-.works-title h1 {
+.works-title h2 {
   margin: 5px auto;
 }
 
@@ -245,8 +245,11 @@ header {
   height: 20px;
   font-weight: 500;
   cursor: pointer;
+  transition: 0.2s ease;
 }
-
+.cart-datails .btn:hover{
+  background-color: #FF6163;
+}
 /* Style for about me section */
 .about-section {
   display: flex;
@@ -289,6 +292,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.2s ease;
+}
+.about-header .btn:hover{
+  background-color: #FF6163;
 }
 
 .about-container {
@@ -342,6 +349,7 @@ header {
   padding: 0;
   height: 40px;
   gap: 8px;
+  margin: 0 5px;
 }
 
 .language-li li {
