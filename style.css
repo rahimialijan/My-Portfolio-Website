@@ -369,6 +369,10 @@ header {
   background-image: url(images/contact-form-illustration.svg);
   background-repeat: no-repeat;
   background-position: bottom right;
+}
+
+.form-container-main {
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -491,4 +495,154 @@ footer hr {
   margin: 0 auto;
   border: 3px solid green;
   border-radius: 3px;
+}
+
+
+/* add style for desktop version */
+@media only screen and (min-width: 768px) {
+  /* add style for header of the page */
+  .nav-logo,
+  .humburger {
+    display: none;
+  }
+
+  .wrapper {
+    width: 1440px;
+    margin: 0 auto;
+    background: url("images/Header-llustration-desktop.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+    gap: 60px;
+    display: flex;
+  }
+
+  header {
+    width: 100%;
+    align-self: center;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-menu {
+    width: 18%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-menu li {
+    list-style: none;
+  }
+
+  .nav-menu li a {
+    text-decoration: none;
+    color: #344563;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  /* add stye for section 1 on main part of page */
+  .section1 {
+    width: 60%;
+    align-self: center;
+    padding: 8% 10% 0;
+  }
+
+  .greeting-text br {
+    display: none;
+  }
+
+  .supporting-text {
+    width: 60%;
+    font-size: 1.05rem;
+  }
+
+  .social-media {
+    width: 30%;
+  }
+
+  /* add style for the  work-section */
+
+  .work-section {
+    margin-top: 16rem;
+  }
+
+  .work-container {
+    width: 82%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+
+  /* add style for  the about section */
+  .about-header {
+    background: url(images/aboutme-topright-desktop.svg), url(images/aboutme-bottomleft-desktop.svg);
+    background-position: right top, left bottom;
+    background-repeat: no-repeat;
+  }
+
+  .about-header p {
+    width: 50%;
+  }
+
+  .about-container {
+    width: 82%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+
+  /* add styel for the contact form */
+  .contact-form {
+    justify-items: center;
+    padding-bottom: 30vh;
+    background:
+      url(images/contact-illustratoin-desktop-right.svg),
+      url(images/contact-illustration-desktop-left.svg),
+      url(images/contact-illustration-desktop-left-2.svg);
+    background-position: right bottom, left bottom, left 25% bottom;
+    background-repeat: no-repeat;
+  }
+
+  .form-container-main {
+    width: 82%;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 0;
+  }
+
+  .contact-header {
+    width: 34%;
+    padding-top: 70px;
+  }
+
+  .contact-header h1 {
+    font-size: 1.3rem;
+  }
+
+  .form-container {
+    width: 66%;
+  }
+
+  .contact {
+    width: 100%;
+  }
+
+  .contact .btn {
+    align-self: flex-start;
+  }
+
+  .form-container .email {
+    display: none;
+  }
+
+  /* add style for footer of the page */
+  .social-media ul {
+    width: 30%;
+    align-self: center;
+  }
+
+  footer hr {
+    display: none;
+  }
 }
