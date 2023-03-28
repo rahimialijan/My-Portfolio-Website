@@ -41,7 +41,6 @@ body {
   flex-direction: column;
   justify-content: center;
   background-color: #fff;
-  gap: 40px;
 }
 
 header {
@@ -160,15 +159,9 @@ header {
   text-align: center;
 }
 
-.works-title hr {
-  width: 25%;
-  margin: 0 auto;
-  border: 3px solid green;
-  border-radius: 3px;
-}
-
 .works-title h2 {
   margin: 5px auto;
+  color: #172b4d;
 }
 
 .work-container {
@@ -280,6 +273,7 @@ header {
   font-size: 1.8em;
   font-weight: 700;
   text-align: center;
+  color: #172b4d;
 }
 
 .about-header p {
@@ -298,11 +292,6 @@ header {
   justify-content: center;
   align-items: center;
   transition: 0.2s ease;
-}
-
-.about-header .btn:hover,
-.cart-datails .btn:hover {
-  background-color: #ff6163;
 }
 
 .about-container {
@@ -372,4 +361,134 @@ header {
 .language-li li a {
   text-decoration: none;
   color: #36b37e;
+}
+
+/* Adding Style for Contact Form */
+
+.contact-form {
+  background-image: url(images/contact-form-illustration.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-top: 0;
+}
+
+.contact-header h1 {
+  width: 84%;
+  font-size: 2.2em;
+  font-weight: 700;
+  text-align: center;
+  color: #172b4d;
+  margin-top: 2px;
+}
+
+.form-container {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 84%;
+  margin: 30px auto;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.contact > * {
+  margin-bottom: 26px;
+  width: 100%;
+  border-radius: 4px;
+  outline: none;
+}
+
+.contact input {
+  height: 48px;
+  border: 2px solid #d0d9d4;
+  transition: 0.3s ease;
+}
+
+::placeholder {
+  padding: 15px;
+  font-size: 0.8rem;
+}
+
+input::placeholder {
+  font-style: italic;
+}
+
+.contact textarea {
+  height: 114px;
+  border: 2px solid  #60c095;
+  transition: 0.3s ease;
+}
+
+.contact input:hover,
+.contact textarea:hover {
+  border: 2px solid lightseagreen;
+}
+
+.contact .btn {
+  width: 135px;
+  font-weight: 500;
+  transition: 0.2s ease;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.about-header .btn:hover,
+.cart-datails .btn:hover,
+.contact .btn:hover {
+  background-color: #ff6163;
+}
+
+.form-container .email {
+  font-size: 1rem;
+  color: #42526e;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .social-media {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer .social-media ul {
+  transform: translateY(-100%);
+}
+
+footer hr {
+  width: 40%;
+  height: 8px;
+  background-color: black;
+  margin-top: 0;
+  border-radius: 4px;
+}
+
+.works-title hr {
+  width: 25%;
+  margin: 0 auto;
+  border: 3px solid green;
+  border-radius: 3px;
 }
