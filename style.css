@@ -364,16 +364,19 @@ header {
 }
 
 /* Adding Style for Contact Form */
-.contact-form{
+.contact-form {
   display: flex;
   flex-direction: column;
+
 }
-.contact-header{
+
+.contact-header {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.contact-header h1{
+
+.contact-header h1 {
   width: 84%;
   font-size: 2rem;
   text-align: center;
@@ -382,4 +385,34 @@ header {
   padding: 0 10px;
 }
 
+.form-container {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
 
+.contact {
+  width: 84%;
+  margin: 30px auto;
+  display: flex;
+ flex-direction: column;
+}
+
+.contact input {
+  width: 100%;
+  margin-bottom: 10px;
+  height: 35px;
+  border-radius: 4px;
+}
+
+.contact textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10%;
+}
+
+.contact .btn {
+  text-align: center;
+  align-self: center;
+}
