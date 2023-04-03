@@ -565,12 +565,16 @@ footer hr {
     flex-direction: column;
     width: 30%;
   }
-  .social-media ul{
+
+  .social-media ul {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     gap: 20px;
     margin-top: 0;
+    width: 30%;
+    align-self: center;
   }
+
   /* add style for the  work-section */
 
   .work-section {
@@ -631,7 +635,7 @@ footer hr {
   }
 
   .form-container {
-    flex:2;
+    flex: 2;
   }
 
   .contact {
@@ -647,10 +651,6 @@ footer hr {
   }
 
   /* add style for footer of the page */
-  .social-media ul {
-    width: 30%;
-    align-self: center;
-  }
 
   footer hr {
     display: none;
