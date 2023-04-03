@@ -112,7 +112,7 @@ header {
 .greeting-text,
 .profission-text {
   margin: 3px;
-  font-size: 1.8em;
+  font-size: 2.2em;
   font-weight: 700;
 }
 
@@ -270,7 +270,7 @@ header {
 
 .about-header h1 {
   width: 60%;
-  font-size: 1.8em;
+  font-size: 2.2em;
   font-weight: 700;
   text-align: center;
   color: #172b4d;
@@ -386,7 +386,9 @@ header {
   font-weight: 700;
   text-align: center;
   color: #172b4d;
+  justify-content: center;
   margin-top: 2px;
+  padding: 0 10px;
 }
 
 .form-container {
