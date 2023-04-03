@@ -364,3 +364,22 @@ header {
 }
 
 /* Adding Style for Contact Form */
+.contact-form{
+  display: flex;
+  flex-direction: column;
+}
+.contact-header{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contact-header h1{
+  width: 84%;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 0;
+  padding: 0 10px;
+}
+
+
