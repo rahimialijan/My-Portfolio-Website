@@ -560,9 +560,17 @@ footer hr {
   }
 
   .social-media {
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: column;
     width: 30%;
   }
-
+  .social-media ul{
+    display: flex;
+    justify-content:center;
+    gap: 20px;
+    margin-top: 0;
+  }
   /* add style for the  work-section */
 
   .work-section {
@@ -594,7 +602,8 @@ footer hr {
 
   /* add styel for the contact form */
   .contact-form {
-    justify-items: center;
+    display: flex;
+    justify-content: center;
     padding-bottom: 30vh;
     background:
       url(images/contact-illustratoin-desktop-right.svg),
@@ -606,14 +615,15 @@ footer hr {
 
   .form-container-main {
     width: 82%;
+    display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    padding: 10px 0;
+    justify-content: center;
+    gap: 15px;
   }
 
   .contact-header {
-    width: 34%;
-    padding-top: 70px;
+    padding-top: 80px;
+    flex: 1;
   }
 
   .contact-header h1 {
@@ -621,7 +631,7 @@ footer hr {
   }
 
   .form-container {
-    width: 66%;
+    flex:2;
   }
 
   .contact {
