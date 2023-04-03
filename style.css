@@ -497,7 +497,6 @@ footer hr {
   border-radius: 3px;
 }
 
-
 /* add style for desktop version */
 @media only screen and (min-width: 768px) {
   /* add style for header of the page */
