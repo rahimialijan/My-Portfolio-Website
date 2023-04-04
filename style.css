@@ -382,7 +382,7 @@ header {
 
 .contact-header h2 {
   width: 84%;
-  font-size: 1.9em;
+  font-size: 2.2rem;
   font-weight: 700;
   text-align: center;
   color: #172b4d;
@@ -432,7 +432,7 @@ input::placeholder {
 }
 
 .contact textarea {
-  height: 114px;
+  height: 120px;
   border: 2px solid  #60c095;
   transition: 0.3s ease;
 }
@@ -489,8 +489,9 @@ footer hr {
 }
 
 .works-title hr {
-  width: 25%;
+  width: 22%;
   margin: 0 auto;
   border: 3px solid green;
   border-radius: 3px;
 }
+
