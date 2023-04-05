@@ -138,7 +138,7 @@ header {
   padding: 0;
   display: flex;
   justify-content: space-between;
-  align-items:flex-start;
+  align-items: flex-start;
   list-style-type: none;
 }
 
@@ -551,6 +551,7 @@ footer hr {
     align-self: center;
     padding: 6% 10% 0;
   }
+
   .greeting-text br {
     display: none;
   }
@@ -575,7 +576,8 @@ footer hr {
     width: 30%;
     align-self: center;
   }
-  .action-arrow-down{
+
+  .action-arrow-down {
     margin-bottom: -20px;
   }
 
@@ -655,12 +657,13 @@ footer hr {
   }
 
   /* add style for footer of the page */
-  footer{
+  footer {
     margin-left: -40px;
     margin-right: -40px;
     border-top: 1px solid rgb(187, 187, 187);
     padding-top: 20px;
   }
+
   footer hr {
     display: none;
   }
