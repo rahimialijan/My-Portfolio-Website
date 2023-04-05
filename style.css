@@ -15,7 +15,7 @@
   color: white;
   height: 24px;
   text-decoration: none;
-  background-color:  #008552;
+  background-color: #008552;
   border-radius: 4px;
   font-weight: 600;
   font-size: 16px;
@@ -461,7 +461,7 @@ input::placeholder {
 .about-header .btn:hover,
 .cart-datails .btn:hover,
 .contact .btn:hover {
-  background-color: #36B37F;
+  background-color: #36b37f;
 }
 
 .form-container .email {
