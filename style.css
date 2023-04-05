@@ -503,7 +503,7 @@ footer hr {
 }
 
 /* add style for desktop version */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 770px) {
   /* add style for header of the page */
   .nav-logo,
   .humburger {
@@ -549,9 +549,23 @@ footer hr {
 
   /* add stye for section 1 on main part of page */
   .section1 {
+    height: 70vh;
     width: 60%;
     align-self: center;
     padding: 6% 10% 0;
+  }
+
+  .greeting-text {
+    font-size: 2.5rem;
+    color: #172b4d;
+    font-weight: 900;
+    line-height: 1.5;
+  }
+
+  .profission-text {
+    font-size: 2.5rem;
+    color: #36b37e;
+    font-weight: 900;
   }
 
   .greeting-text br {
@@ -561,10 +575,11 @@ footer hr {
   .supporting-text {
     width: 76%;
     font-size: 1rem;
+    color: #42526e;
   }
 
   .social-media {
-    margin-top: 3vh;
+    margin-top: 2vh;
     display: flex;
     flex-direction: column;
     width: 30%;
@@ -580,12 +595,13 @@ footer hr {
   }
 
   .action-arrow-down {
-    margin-bottom: -20px;
+    position: absolute;
+    bottom: 8rem;
   }
 
   /* add style for the  work-section */
   .work-section {
-    margin-top: 18rem;
+    margin-top: 20rem;
   }
 
   .work-container {
@@ -601,9 +617,17 @@ footer hr {
     background-repeat: no-repeat;
   }
 
+  .about-header h2 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    line-height: 1.5;
+    color: #172b4d;
+  }
+
   .about-header p {
     width: 45%;
     font-size: 1.1rem;
+    color: #42526e;
   }
 
   .about-container {
@@ -634,12 +658,15 @@ footer hr {
   }
 
   .contact-header {
-    padding-top: 80px;
+    padding-top: 70px;
     flex: 1;
   }
 
   .contact-header h1 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    color: #172b4d;
+    font-weight: 700;
+    line-height: 1.7;
   }
 
   .form-container {
