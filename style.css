@@ -93,7 +93,7 @@ header {
 }
 
 .section1 {
-  height: 80vh;
+  height: 68vh;
   display: flex;
   padding: 20% 10% 0;
   flex-direction: column;
@@ -127,21 +127,24 @@ header {
 }
 
 .social-media {
+  display: flex;
+  margin-top: 0;
   width: 60%;
 }
 
 .social-media ul {
-  margin: 0;
+  width: 100%;
+  height: 100%;
   padding: 0;
   display: flex;
   justify-content: space-between;
+  align-items:flex-start;
   list-style-type: none;
-  margin-top: 7vh;
 }
 
 .action-arrow-down {
   position: absolute;
-  bottom: 0;
+  bottom: 12rem;
 }
 
 /* Style for work-section */
@@ -546,20 +549,19 @@ footer hr {
   .section1 {
     width: 60%;
     align-self: center;
-    padding: 8% 10% 0;
+    padding: 6% 10% 0;
   }
-
   .greeting-text br {
     display: none;
   }
 
   .supporting-text {
-    width: 60%;
-    font-size: 1.05rem;
+    width: 76%;
+    font-size: 1rem;
   }
 
   .social-media {
-    margin-top: 8vh;
+    margin-top: 3vh;
     display: flex;
     flex-direction: column;
     width: 30%;
@@ -573,10 +575,13 @@ footer hr {
     width: 30%;
     align-self: center;
   }
+  .action-arrow-down{
+    margin-bottom: -20px;
+  }
 
   /* add style for the  work-section */
   .work-section {
-    margin-top: 16rem;
+    margin-top: 18rem;
   }
 
   .work-container {
@@ -593,7 +598,8 @@ footer hr {
   }
 
   .about-header p {
-    width: 50%;
+    width: 45%;
+    font-size: 1.1rem;
   }
 
   .about-container {
@@ -649,7 +655,12 @@ footer hr {
   }
 
   /* add style for footer of the page */
-
+  footer{
+    margin-left: -40px;
+    margin-right: -40px;
+    border-top: 1px solid rgb(187, 187, 187);
+    padding-top: 20px;
+  }
   footer hr {
     display: none;
   }
