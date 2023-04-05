@@ -112,7 +112,7 @@ header {
 .greeting-text,
 .profission-text {
   margin: 3px;
-  font-size: 1.8em;
+  font-size: 2.2em;
   font-weight: 700;
 }
 
@@ -273,7 +273,7 @@ header {
 
 .about-header h1 {
   width: 60%;
-  font-size: 1.8em;
+  font-size: 2.2em;
   font-weight: 700;
   text-align: center;
   color: #172b4d;
@@ -387,13 +387,15 @@ header {
   padding-top: 0;
 }
 
-.contact-header h1 {
+.contact-header h2 {
   width: 84%;
-  font-size: 2.2em;
+  font-size: 2.2rem;
   font-weight: 700;
   text-align: center;
   color: #172b4d;
+  justify-content: center;
   margin-top: 2px;
+  padding: 0 10px;
 }
 
 .form-container {
@@ -437,7 +439,7 @@ input::placeholder {
 }
 
 .contact textarea {
-  height: 114px;
+  height: 120px;
   border: 2px solid  #60c095;
   transition: 0.3s ease;
 }
@@ -494,7 +496,7 @@ footer hr {
 }
 
 .works-title hr {
-  width: 25%;
+  width: 22%;
   margin: 0 auto;
   border: 3px solid green;
   border-radius: 3px;
