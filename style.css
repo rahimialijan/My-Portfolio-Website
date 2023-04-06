@@ -441,7 +441,7 @@ input::placeholder {
 .contact textarea {
   height: 120px;
   border: 2px solid  #60c095;
-  transition: 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 
 .contact input:hover,
@@ -462,6 +462,8 @@ input::placeholder {
 .cart-datails .btn:hover,
 .contact .btn:hover {
   background-color: #36b37f;
+  color: rgb(201, 190, 190);
+  border-radius: 6px;
 }
 
 .btn:hover {
