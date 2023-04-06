@@ -464,6 +464,17 @@ input::placeholder {
   background-color: #36b37f;
 }
 
+.btn:hover {
+  transform: scale(1.1); 
+  color: #ff7b29;
+  border-radius: 50%;
+}
+
+.btn {
+  background: #2db34a;
+  border-radius: 6px;
+  transition: background .2s linear, border-radius 1s ease-in 1s;
+}
 
 .form-container .email {
   font-size: 1rem;
