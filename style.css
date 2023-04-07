@@ -537,18 +537,21 @@ footer hr {
     display: flex;
     justify-content: space-between;
     padding-right: 36rem;
+    
   }
-
   .nav-menu li {
     list-style: none;
   }
 
-  .nav-menu li a {
+  .nav-menu .nav-link {
     text-decoration: none;
     color: #344563;
     font-size: 15px;
     font-weight: 600;
+    position: relative;
   }
+/*Maris Conterbution here*/
+
 
   /* add stye for section 1 on main part of page */
   .section1 {
@@ -766,6 +769,8 @@ footer hr {
 
   .about-icon img:hover {
     transform: rotate(360deg);
+    width: 90%;
+    height: 90%;
   }
 
   .nav-logo {
