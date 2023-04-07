@@ -543,11 +543,28 @@ footer hr {
     list-style: none;
   }
 
-  .nav-menu li a {
+  .nav-menu .nav-link {
     text-decoration: none;
     color: #344563;
     font-size: 15px;
     font-weight: 600;
+    position: relative;
+  }
+
+  /* Maris Conterbution here */
+  .nav-link::after {
+    content: "";
+    height: 3px;
+    width: 100%;
+    background: rgb(0, 183, 255);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    opacity: 0;
+  }
+
+  .nav-link:hover::after {
+    opacity: 1;
   }
 
   /* add stye for section 1 on main part of page */
@@ -766,6 +783,8 @@ footer hr {
 
   .about-icon img:hover {
     transform: rotate(360deg);
+    width: 90%;
+    height: 90%;
   }
 
   .nav-logo {
