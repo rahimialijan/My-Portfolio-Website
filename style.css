@@ -68,12 +68,12 @@ header {
 }
 
 .nav-menu {
-  background-color: #ebf0ee;
+  background-color: #fff;
   display: flex;
   text-decoration: none;
   flex-direction: column;
   top: 0;
-  width: 100%;
+  width: 83%;
   height: 85vh;
   border: 2px solid red;
   padding-top: 100px;
