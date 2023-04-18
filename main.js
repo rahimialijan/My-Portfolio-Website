@@ -1,3 +1,4 @@
+
 const humburgerIcon = document.querySelector('.humburger');
 const closeIcon = document.querySelector('.close-icon');
 const navMenu = document.querySelector('.nav-menu');
