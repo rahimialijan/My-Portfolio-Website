@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Alijan Rahimi's portfolio" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -159,20 +160,20 @@
                     <div class="form-container">
                         <form class="contact">
                             <div class="input-div">
-                                <input type="text" placeholder="Full name" required>
-                                <span class="inputs-error">please type your name</span>
+                                <input id="contact-name" type="text" placeholder="Full name" required onkeyup="nameValidation()">
+                                <span id="name-error" class="inputs-error"></span>
                             </div>
                             <div class="input-div">
-                                <input type="email" placeholder="Email adderss" required>
-                                <span class="inputs-error">please type your email</span>
+                                <input id="contact-email" type="email" placeholder="Email adderss" required onkeyup="emailValidation()">
+                                <span id="email-error" class="inputs-error"></span>
                             </div >
                             <div class="input-div">
-                                <textarea type="textarea" placeholder="Hey I'd like ot connect to..."></textarea>
-                                <span class="inputs-error">please type your message</span>
+                                <textarea id="contact-message" type="textarea" placeholder="Hey I'd like ot connect to..." onkeyup="messageValidation()"></textarea>
+                                <span id="message-error" ></span>
                             </div>
                             <div class="btn-div">
-                                <button class="btn">Get in Touch</button>
-                                <span class="form-error">please fill and inputs</span>
+                                <button class="btn" onclick="return formValidation()">Get in Touch</button>
+                                <span id="submit-error" class="form-error"></span>
                             </div>
                         </form>
                         <p class="email">alijanrahimi1990@gmail.com</p>
