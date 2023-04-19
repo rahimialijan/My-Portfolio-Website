@@ -106,16 +106,22 @@ generatCart();
 const openModalBtn = document.querySelectorAll('[data-modal-target]');
 const closeModalBtn = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementById('overlay');
+const contactForm = document.querySelector('.contact');
+const pageBody = document.getElementById('page-body');
 
 function openModal(modal) {
   if (modal == null) return;
   modal.classList.add('active');
   overlay.classList.add('active');
+  contactForm.classList.add('z-index');
+  pageBody.classList.add('active');
 }
 function closeModal(modal) {
   if (modal == null) return;
   modal.classList.remove('active');
   overlay.classList.remove('active');
+  contactForm.classList.remove('z-index');
+  pageBody.classList.remove('active');
 }
 closeModalBtn.forEach((button) => {
   button.addEventListener('click', () => {

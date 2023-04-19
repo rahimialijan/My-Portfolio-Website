@@ -6,13 +6,20 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   transition: 0.4s ease-in-out;
-  z-index: 10;
+  z-index: 100;
   border-radius: 10px;
   background-color: #fff;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+}
+
+.contact.z-index {
+  z-index: -10;
+}
+
+#page-body.active {
+  overflow-y: hidden;
 }
 
 .modal-img-container {
@@ -124,7 +131,10 @@
   bottom: 0;
   background-color: #c1c7d0;
   pointer-events: none;
-  overflow: hidden;
+  backdrop-filter: blur(10px);
+  filter: brightness(50%);
+  filter: contrast(1);
+  filter: opacity(50%);
 }
 
 #overlay.active {
@@ -140,12 +150,20 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    z-index: 10;
+    z-index: 100;
     border-radius: 10px;
     background-color: #fff;
     padding: 20px 40px;
     display: flex;
     flex-direction: column;
+  }
+
+  .contact.z-index {
+    z-index: -10;
+  }
+
+  #page-body.active {
+    overflow-y: hidden;
   }
 
   .modal.active {
@@ -254,8 +272,12 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: rgba(134, 133, 133, 0.5);
+    background-color: #c1c7d0;
     pointer-events: none;
+    backdrop-filter: blur(10px);
+    filter: brightness(50%);
+    filter: contrast(1);
+    filter: opacity(50%);
   }
 
   #overlay.active {
