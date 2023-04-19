@@ -112,7 +112,12 @@ function openModal(modal) {
   overlay.classList.add('active');
 }
 
-
+closeModalBtn.forEach((button) => {
+  button.addEventListener('click', () => {
+    const modal = button.closest('.modal');
+    closeModal(modal);
+  });
+});
 openModalBtn.forEach((button) => {
   button.addEventListener('click', () => {
     const modal = document.querySelector(button.dataset.modalTarget);
