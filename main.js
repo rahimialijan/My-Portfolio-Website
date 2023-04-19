@@ -1,65 +1,66 @@
-
 const projectCard = document.getElementById('work-container');
 
 const cardData = [
   {
     id: 1,
-    image: "Project-Images/ecommerce sit.PNG",
+    image: 'Project-Images/ecommerce sit.PNG',
     title: 'Clothing Store eCommerce Website',
     technogies: ['Ruby on rails', 'CSS', 'HTML', 'JavScript'],
-    desc:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quia iure culpa assumenda et. Error saepe mollitia dignissimos sed maiores!',
+    desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quia iure culpa assumenda et. Error saepe mollitia dignissimos sed maiores!',
     demoLink: 'https://rahimialijan.github.io/Ecommerce-Website-Full-Responsive/',
     sourceLink: 'https://github.com/rahimialijan/Ecommerce-Website-Full-Responsive',
   },
   {
     id: 2,
-    image: "Project-Images/booklist.PNG",
+    image: 'Project-Images/booklist.PNG',
     title: 'JavaScript Online BookList App',
     technogies: ['Ruby on rails', 'CSS', 'HTML', 'JavScript'],
-    desc:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quia iure culpa assumenda et. Error saepe mollitia dignissimos sed maiores!',
+    desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quia iure culpa assumenda et. Error saepe mollitia dignissimos sed maiores!',
     demoLink: 'https://rahimialijan.github.io/Ecommerce-Website-Full-Responsive/',
     sourceLink: 'https://github.com/rahimialijan/Ecommerce-Website-Full-Responsive',
   },
   {
     id: 3,
-    image: "Project-Images/educational sit.PNG",
+    image: 'Project-Images/educational sit.PNG',
     title: 'Website for educational centers',
     technogies: ['Ruby on rails', 'CSS', 'HTML', 'JavScript'],
-    desc:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quia iure culpa assumenda et. Error saepe mollitia dignissimos sed maiores!',
+    desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quia iure culpa assumenda et. Error saepe mollitia dignissimos sed maiores!',
     demoLink: 'https://rahimialijan.github.io/Ecommerce-Website-Full-Responsive/',
     sourceLink: 'https://github.com/rahimialijan/Ecommerce-Website-Full-Responsive',
   },
   {
     id: 4,
-    image: "Project-Images/online clothes stor.PNG",
+    image: 'Project-Images/online clothes stor.PNG',
     title: 'Online Website for Clothes Stores',
     technogies: ['Ruby on rails', 'CSS', 'HTML', 'JavScript'],
-    desc:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quia iure culpa assumenda et. Error saepe mollitia dignissimos sed maiores!',
+    desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quia iure culpa assumenda et. Error saepe mollitia dignissimos sed maiores!',
     demoLink: 'https://rahimialijan.github.io/Ecommerce-Website-Full-Responsive/',
     sourceLink: 'https://github.com/rahimialijan/Ecommerce-Website-Full-Responsive',
   },
   {
     id: 5,
-    image: "Project-Images/portfolio1.PNG",
+    image: 'Project-Images/portfolio1.PNG',
     title: 'My Portfolio Website',
     technogies: ['Ruby on rails', 'CSS', 'HTML', 'JavScript'],
-    desc:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quia iure culpa assumenda et. Error saepe mollitia dignissimos sed maiores!',
+    desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quia iure culpa assumenda et. Error saepe mollitia dignissimos sed maiores!',
     demoLink: 'https://rahimialijan.github.io/Ecommerce-Website-Full-Responsive/',
     sourceLink: 'https://github.com/rahimialijan/Ecommerce-Website-Full-Responsive',
   },
   {
     id: 6,
-    image: "Project-Images/my portfolio.PNG",
+    image: 'Project-Images/my portfolio.PNG',
     title: 'My Microverse Portfolio Website',
     technogies: ['Ruby on rails', 'CSS', 'HTML', 'JavScript'],
-    desc:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quia iure culpa assumenda et. Error saepe mollitia dignissimos sed maiores!',
+    desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quia iure culpa assumenda et. Error saepe mollitia dignissimos sed maiores!',
     demoLink: 'https://rahimialijan.github.io/Ecommerce-Website-Full-Responsive/',
     sourceLink: 'https://github.com/rahimialijan/Ecommerce-Website-Full-Responsive',
   }];
 
 function generatCart() {
   projectCard.innerHTML = cardData.map((card) => {
-    const { id, image, technogies, title,desc,demoLink,sourceLink } = card;
+    const {
+      id, image, technogies, title, desc, demoLink, sourceLink,
+    } = card;
     return `
     <div class="cart-container">
       <div class="img-container"><img src="${image}" alt="project image"></div>
@@ -102,9 +103,9 @@ function generatCart() {
 generatCart();
 
 // modal functions t
-const openModalBtn=document.querySelectorAll('[data-modal-target]');
-const closeModalBtn=document.querySelectorAll('[data-close-button]');
-const overlay=document.getElementById('overlay');
+const openModalBtn = document.querySelectorAll('[data-modal-target]');
+const closeModalBtn = document.querySelectorAll('[data-close-button]');
+const overlay = document.getElementById('overlay');
 
 function openModal(modal) {
   if (modal == null) return;
@@ -150,12 +151,12 @@ if (humburgerIcon) {
   });
 }
 if (navlinks) {
-  navlinks.forEach((nav) =>{
-    nav.addEventListener('click',()=>{
+  navlinks.forEach((nav) => {
+    nav.addEventListener('click', () => {
       arrowbtn.classList.remove('display');
       navMenu.classList.remove('active');
-    })
-  })
+    });
+  });
 }
 
 if (closeIcon) {

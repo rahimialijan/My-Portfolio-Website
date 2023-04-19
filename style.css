@@ -530,29 +530,33 @@ input::placeholder {
   font-size: 1rem;
   color: #42526e;
 }
-.input-div{
+
+.input-div {
   position: relative;
   display: flex;
   flex-direction: column;
 }
-.btn-div{
+
+.btn-div {
   position: relative;
   display: flex;
   flex-direction: column;
 }
-.inputs-error{
+
+.inputs-error {
   position: absolute;
- font-size: 0.8rem;
- color: red;
- top: 16px;
- right: 10px;
+  font-size: 0.8rem;
+  color: red;
+  top: 16px;
+  right: 10px;
 }
-.form-error{
+
+.form-error {
   position: absolute;
- font-size: 0.8rem;
- color: red;
- top: 16px;
- left: 200px;
+  font-size: 0.8rem;
+  color: red;
+  top: 16px;
+  left: 200px;
 }
 
 footer {
@@ -810,17 +814,19 @@ footer hr {
   .form-container .email {
     display: none;
   }
-  .input-div{
+
+  .input-div {
     position: relative;
     display: flex;
     flex-direction: column;
   }
-  .inputs-error{
+
+  .inputs-error {
     position: absolute;
-   font-size: 0.9rem;
-   color: red;
-   top: 16px;
-   right: 12px;
+    font-size: 0.9rem;
+    color: red;
+    top: 16px;
+    right: 12px;
   }
 
   /* add style for footer of the page */
