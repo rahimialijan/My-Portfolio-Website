@@ -1,6 +1,6 @@
 .modal {
-  width: 70%;
-  height: 68%;
+  width: 80%;
+  height: 90%;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -9,19 +9,22 @@
   z-index: 10;
   border-radius: 10px;
   background-color: #fff;
-  padding: 10px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .modal-img-container {
   width: 100%;
-  height: 50%;
+  height: 35%;
+  border-radius: 10px;
 }
 
 .modal-img-container img {
   width: 100%;
   height: 100%;
+  border-radius: 10px;
 }
 
 .modal.active {
@@ -40,7 +43,10 @@
 }
 
 .heading-container h2 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  color: #172b4d;
+  font-weight: 700;
+  line-height: 1.5;
 }
 
 .modal-project-links {
@@ -67,7 +73,7 @@
 .btn-container a {
   text-decoration: none;
   color: #fff;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .modal-project-links li a {
@@ -79,23 +85,33 @@
 .btn-container {
   position: absolute;
   margin-top: 10px;
-  width: 100%;
+  width: 90%;
+  align-self: center;
   display: flex;
-  justify-content: center;
+  left: 15px;
+  right: 20px;
   bottom: 10px;
+  height: auto;
 }
 
 .btn-container .modal-btn {
-  padding: 8px;
-  margin: 5px;
+  padding: 12px 20px;
+  margin-left: 10px;
   display: flex;
-  text-align: center;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #36b37f;
 }
 
-.modal-container p {
-  font-size: 0.9rem;
-  margin-bottom: 50px;
+.btn-container .modal-btn img {
+  margin-left: 8px;
+  transform: translateY(4px);
+}
+
+.modal p {
+  font-size: 1.2rem;
+  color: #344563;
+  line-height: 1.5;
 }
 
 #overlay {
@@ -106,8 +122,9 @@
   right: 0;
   left: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #c1c7d0;
   pointer-events: none;
+  overflow: hidden;
 }
 
 #overlay.active {
@@ -117,8 +134,8 @@
 
 @media only screen and (min-width: 770px) {
   .modal {
-    width: 36%;
-    height: 80%;
+    width: 38%;
+    height: 90%;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -136,14 +153,15 @@
   }
 
   .heading-container h2 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding: 0;
     margin: 0;
+    width: 60%;
   }
 
   .modal-img-container {
     width: 100%;
-    height: 62%;
+    height: 50%;
   }
 
   .modal-img-container img {
@@ -175,9 +193,9 @@
   .btn-container {
     position: relative;
     margin-top: 10px;
-    width: 55%;
+    width: 65%;
     display: flex;
-    justify-content: center;
+    align-items: center;
   }
 
   .btn-container .modal-btn {
@@ -223,7 +241,7 @@
     white-space: nowrap;
   }
 
-  .modal-container p {
+  .modal p {
     font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 10px;
@@ -236,7 +254,7 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(134, 133, 133, 0.5);
     pointer-events: none;
   }
 
