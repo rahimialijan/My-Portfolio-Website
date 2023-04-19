@@ -111,7 +111,19 @@ function openModal(modal) {
   modal.classList.add('active');
   overlay.classList.add('active');
 }
+function closeModal(modal) {
+  if (modal == null) return;
+  modal.classList.remove('active');
+  overlay.classList.remove('active');
+}
 
+
+closeModalBtn.forEach((button) => {
+  button.addEventListener('click', () => {
+    const modal = button.closest('.modal');
+    closeModal(modal);
+  });
+});
 openModalBtn.forEach((button) => {
   button.addEventListener('click', () => {
     const modal = document.querySelector(button.dataset.modalTarget);
