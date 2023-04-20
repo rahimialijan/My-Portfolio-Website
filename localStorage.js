@@ -1,4 +1,4 @@
-const contactForm = document.getElementById('contact-submit');
+const formSubmit = document.getElementById('contact-submit');
 const nameInput = document.getElementById('contact-name');
 const emailInput = document.getElementById('contact-email');
 const messageInput = document.getElementById('contact-message');
@@ -10,7 +10,7 @@ if (formDetails) {
   messageInput.value = formDetails.message;
 }
 
-contactForm.addEventListener('submit', (event) => {
+formSubmit.addEventListener('submit', (event) => {
   event.preventDefault();
   const name = nameInput.value;
   const email = emailInput.value;
@@ -21,9 +21,9 @@ contactForm.addEventListener('submit', (event) => {
   }
   // save to data to localStorage.
   const contactIfo = {
-    name,
-    email,
-    message,
+    name:name,
+    email:email,
+    message:message
   };
   localStorage.setItem('contactInfo', JSON.stringify(contactIfo));
 });
