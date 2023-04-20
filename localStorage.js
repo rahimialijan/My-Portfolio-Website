@@ -21,9 +21,9 @@ formSubmit.addEventListener('submit', (event) => {
   }
   // save to data to localStorage.
   const contactIfo = {
-    name:name,
-    email:email,
-    message:message
+    name,
+    email,
+    message,
   };
   localStorage.setItem('contactInfo', JSON.stringify(contactIfo));
 });
