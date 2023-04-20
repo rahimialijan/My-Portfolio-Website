@@ -531,6 +531,34 @@ input::placeholder {
   color: #42526e;
 }
 
+.input-div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs-error {
+  position: absolute;
+  font-size: 0.8rem;
+  color: red;
+  top: 16px;
+  right: 10px;
+}
+
+.form-error {
+  position: absolute;
+  font-size: 0.8rem;
+  color: red;
+  top: 16px;
+  left: 200px;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -603,7 +631,7 @@ footer hr {
     align-items: center;
     top: 0;
     height: auto;
-    right: 560px;
+    right: 590px;
     overflow: hidden;
     background-color: transparent;
     padding: 0;
@@ -784,6 +812,21 @@ footer hr {
 
   .form-container .email {
     display: none;
+  }
+
+  .input-div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+  }
+
+  .inputs-error {
+    position: absolute;
+    font-size: 0.9rem;
+    color: red;
+    top: 16px;
+    right: 12px;
   }
 
   /* add style for footer of the page */
