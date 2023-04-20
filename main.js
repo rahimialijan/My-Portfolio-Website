@@ -147,9 +147,19 @@ function messageValidation() {
   return true;
 }
 function formValidation() {
+  const emailField = document.getElementById('contact-email').value;
+  const emailRegex = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
   if (!nameValidation() || !emailValidation() || !messageValidation()) {
     sumbitError.style.display = 'block';
-    sumbitError.innerHTML = 'Please fill all fields';
+    sumbitError.innerHTML = 'Please fill all fields correctly';
+    setTimeout(() => {
+      sumbitError.style.display = 'none';
+    }, 3000);
+    return false;
+  }
+  if (!emailField.match(emailRegex)) {
+    sumbitError.style.display = 'block';
+    sumbitError.innerHTML = 'Email field should be in lower case';
     setTimeout(() => {
       sumbitError.style.display = 'none';
     }, 3000);
