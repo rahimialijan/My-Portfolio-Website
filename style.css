@@ -554,6 +554,7 @@ input::placeholder {
 .form-error {
   position: absolute;
   font-size: 1.5rem;
+  font-size: 0.8rem;
   color: red;
   top: 16px;
   left: 200px;
@@ -561,13 +562,12 @@ input::placeholder {
 
 #message-error {
   position: absolute;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: red;
   bottom: 20px;
   right: 12px;
 }
-
-.bi-check-circle-fill {
+.bi-check-circle-fill{
   font-size: 1.5rem;
   color: #36b37e;
 }
@@ -832,6 +832,7 @@ footer hr {
     position: relative;
     display: flex;
     flex-direction: column;
+    z-index: 1;
   }
 
   .inputs-error {
@@ -850,7 +851,6 @@ footer hr {
     right: 12px;
   }
 
-  /* add style for footer of the page */
   footer {
     margin-left: -40px;
     margin-right: -40px;
