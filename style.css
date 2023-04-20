@@ -553,17 +553,13 @@ input::placeholder {
 
 .form-error {
   position: absolute;
-<<<<<<< HEAD
   font-size: 1.5rem;
-=======
   font-size: 0.8rem;
->>>>>>> 4413187c0d633bcb06dd0cd4b3da726500c5ffa0
   color: red;
   top: 16px;
   left: 200px;
 }
 
-<<<<<<< HEAD
 #message-error {
   position: absolute;
   font-size: 1rem;
@@ -577,8 +573,6 @@ input::placeholder {
   color: #36b37e;
 }
 
-=======
->>>>>>> 4413187c0d633bcb06dd0cd4b3da726500c5ffa0
 footer {
   display: flex;
   flex-direction: column;
@@ -839,10 +833,7 @@ footer hr {
     position: relative;
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
-=======
     z-index: 1;
->>>>>>> 4413187c0d633bcb06dd0cd4b3da726500c5ffa0
   }
 
   .inputs-error {
@@ -853,7 +844,6 @@ footer hr {
     right: 12px;
   }
 
-<<<<<<< HEAD
   #message-error {
     position: absolute;
     font-size: 0.9rem;
@@ -862,9 +852,6 @@ footer hr {
     right: 12px;
   }
 
-=======
->>>>>>> 4413187c0d633bcb06dd0cd4b3da726500c5ffa0
-  /* add style for footer of the page */
   footer {
     margin-left: -40px;
     margin-right: -40px;

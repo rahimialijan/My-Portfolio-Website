@@ -59,11 +59,7 @@ const cardData = [
 function generatCart() {
   projectCard.innerHTML = cardData.map((card) => {
     const {
-<<<<<<< HEAD
-      id, image, technogies, title,
-=======
       id, image, technogies, title, desc, demoLink, sourceLink,
->>>>>>> 4413187c0d633bcb06dd0cd4b3da726500c5ffa0
     } = card;
     return `
     <div class="cart-container">
@@ -106,8 +102,6 @@ function generatCart() {
 }
 generatCart();
 
-<<<<<<< HEAD
-=======
 // modal functions t
 const openModalBtn = document.querySelectorAll('[data-modal-target]');
 const closeModalBtn = document.querySelectorAll('[data-close-button]');
@@ -150,7 +144,6 @@ overlay.addEventListener('click', () => {
 });
 
 // mobile menu functionality is here
->>>>>>> 4413187c0d633bcb06dd0cd4b3da726500c5ffa0
 const humburgerIcon = document.querySelector('.humburger');
 const closeIcon = document.querySelector('.close-icon');
 const navMenu = document.querySelector('.nav-menu');
