@@ -558,14 +558,16 @@ input::placeholder {
   top: 16px;
   left: 200px;
 }
-#message-error{
+
+#message-error {
   position: absolute;
   font-size: 0.9rem;
   color: red;
   bottom: 20px;
   right: 12px;
 }
-.bi-check-circle-fill{
+
+.bi-check-circle-fill {
   font-size: 1.5rem;
   color: #36b37e;
 }
@@ -839,7 +841,8 @@ footer hr {
     top: 16px;
     right: 12px;
   }
-  #message-error{
+
+  #message-error {
     position: absolute;
     font-size: 0.9rem;
     color: red;
