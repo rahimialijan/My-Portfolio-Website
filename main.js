@@ -1,47 +1,48 @@
-
 const projectCard = document.getElementById('work-container');
 
 const cardData = [
   {
     id: 1,
-    image: "Project-Images/ecommerce sit.PNG",
+    image: 'Project-Images/ecommerce sit.PNG',
     title: 'Clothing Store eCommerce Website',
     technogies: ['Ruby on rails', 'CSS', 'HTML', 'JavScript'],
   },
   {
     id: 2,
-    image: "Project-Images/booklist.PNG",
+    image: 'Project-Images/booklist.PNG',
     title: 'JavaScript Online BookList App',
     technogies: ['Ruby on rails', 'CSS', 'HTML', 'JavScript'],
   },
   {
     id: 3,
-    image: "Project-Images/educational sit.PNG",
+    image: 'Project-Images/educational sit.PNG',
     title: 'Website for educational centers',
     technogies: ['Ruby on rails', 'CSS', 'HTML', 'JavScript'],
   },
   {
     id: 4,
-    image: "Project-Images/online clothes stor.PNG",
+    image: 'Project-Images/online clothes stor.PNG',
     title: 'Online Website for Clothes Stores',
     technogies: ['Ruby on rails', 'CSS', 'HTML', 'JavScript'],
   },
   {
     id: 5,
-    image: "Project-Images/portfolio1.PNG",
+    image: 'Project-Images/portfolio1.PNG',
     title: 'My Portfolio Website',
     technogies: ['Ruby on rails', 'CSS', 'HTML', 'JavScript'],
   },
   {
     id: 6,
-    image: "Project-Images/my portfolio.PNG",
+    image: 'Project-Images/my portfolio.PNG',
     title: 'My Microverse Portfolio Website',
     technogies: ['Ruby on rails', 'CSS', 'HTML', 'JavScript'],
   }];
 
 function generatCart() {
   projectCard.innerHTML = cardData.map((card) => {
-    const { id, image, technogies, title } = card;
+    const {
+      id, image, technogies, title,
+    } = card;
     return `
     <div class="cart-container">
       <div class="img-container"><img src="${image}" alt="project image"></div>
@@ -60,7 +61,6 @@ function generatCart() {
   }).join('');
 }
 generatCart();
-
 
 const humburgerIcon = document.querySelector('.humburger');
 const closeIcon = document.querySelector('.close-icon');
@@ -101,60 +101,60 @@ if (closeIcon) {
   });
 }
 
+// form validations functionalty codes are here
 
-//form validations functionalty codes are here
+const nameError = document.getElementById('name-error');
+const emailError = document.getElementById('email-error');
+const messageError = document.getElementById('message-error');
+const sumbitError = document.getElementById('submit-error');
 
-const nameError=document.getElementById('name-error');
-const emailError=document.getElementById('email-error');
-const messageError=document.getElementById('message-error');
-const sumbitError=document.getElementById('submit-error');
-
-function nameValidation(){
-  var name=document.getElementById('contact-name').value
-  if (name.length==0){
-    nameError.innerHTML='insert your name'
-    return false
-  }
-  if (!name.match(/^[a-zA-Z]+ [a-zA-Z]+$/)){
-    nameError.innerHTML='insert full name'
-    return false
-  }
-  nameError.innerHTML='<i class="bi bi-check-circle-fill"></i>'
-  return true;
-}
-
-function emailValidation(){
-  var email=document.getElementById('contact-email').value
-  if (email.length==0){
-    emailError.innerHTML='insert your email'
-    return false
-  }
-  if (!email.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)){
-    emailError.innerHTML='Invalid Email'
-    return false
-  }
-  emailError.innerHTML='<i class="bi bi-check-circle-fill"></i>'
-  return true;
-}
-function messageValidation(){
-  var message=document.getElementById('contact-message').value;
-  var required=30;
-  var left=required-message.length;
-  if (left>0){
-    messageError.innerHTML=left+' More characters required';
+function nameValidation() {
+  const name = document.getElementById('contact-name').value;
+  if (name.length === 0) {
+    nameError.innerHTML = 'insert your name';
     return false;
   }
-  messageError.innerHTML='<i class="bi bi-check-circle-fill"></i>';
-  return true;
-}
-function formValidation(){
-  if (!nameValidation() || !emailValidation() || !messageValidation()){
-    sumbitError.style.display='block';
-    sumbitError.innerHTML='Please fill all fields'
-    setTimeout(function(){
-      sumbitError.style.display="none"
-    },3000)
+  if (!name.match(/^[a-zA-Z]+ [a-zA-Z]+$/)) {
+    nameError.innerHTML = 'insert full name';
     return false;
   }
+  nameError.innerHTML = '<i class="bi bi-check-circle-fill"></i>';
+  return true;
 }
 
+function emailValidation() {
+  const email = document.getElementById('contact-email').value;
+  if (email.length === 0) {
+    emailError.innerHTML = 'insert your email';
+    return false;
+  }
+  if (!email.match(/^(([^<>()\]\\.,;:\s@"]+(\.[^<>()\]\\.,;:\s@"]+)*)|(".+"))@(([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
+    emailError.innerHTML = 'Invalid Email';
+    return false;
+  }
+  emailError.innerHTML = '<i class="bi bi-check-circle-fill"></i>';
+  return true;
+}
+function messageValidation() {
+  const message = document.getElementById('contact-message').value;
+  const required = 30;
+  const left = required - message.length;
+  if (left > 0) {
+    messageError.innerHTML = `${left} More characters required`;
+    return false;
+  }
+  messageError.innerHTML = '<i class="bi bi-check-circle-fill"></i>';
+  return true;
+}
+function formValidation() {
+  if (!nameValidation() || !emailValidation() || !messageValidation()) {
+    sumbitError.style.display = 'block';
+    sumbitError.innerHTML = 'Please fill all fields';
+    setTimeout(() => {
+      sumbitError.style.display = 'none';
+    }, 3000);
+    return false;
+  }
+  return true;
+}
+formValidation();
