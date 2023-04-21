@@ -1,16 +1,16 @@
-const contactForm = document.getElementById('contact-submit');
+const formSubmit = document.getElementById('contact-submit');
 const nameInput = document.getElementById('contact-name');
 const emailInput = document.getElementById('contact-email');
 const messageInput = document.getElementById('contact-message');
 
-const formInfo = JSON.parse(localStorage.getItem('contactInfo'));
-if (formInfo) {
-  nameInput.value = formInfo.name;
-  emailInput.value = formInfo.email;
-  messageInput.value = formInfo.message;
+const formDetails = JSON.parse(localStorage.getItem('contactInfo'));
+if (formDetails) {
+  nameInput.value = formDetails.name;
+  emailInput.value = formDetails.email;
+  messageInput.value = formDetails.message;
 }
 
-contactForm.addEventListener('submit', (event) => {
+formSubmit.addEventListener('submit', (event) => {
   event.preventDefault();
   const name = nameInput.value;
   const email = emailInput.value;
